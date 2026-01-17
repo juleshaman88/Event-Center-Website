@@ -13,7 +13,7 @@ p{
 }
 
 section{
-    padding: 80px;
+    padding: 50px;
 }
 
 header{
@@ -123,36 +123,37 @@ header .navbar li a{
     max-height: 500px;
 }
 
-.events{
-    display: flex;
-    flex-direction: grid;
-    justify-content: center;
-    align-items: center;
+.event-title{
+    margin-bottom: 5px;
 }
 
-.events .event-title h2{
+.event h2{
     display: flex;
     align-items: center;
     font-family: "Metamorphous", sans-serif;
     font-size: 3em;
-    padding-bottom: 20px;
     font-style: bold;
     justify-content: center;
 }
 
-.events .box {
+.event-blocks{
+    display: flex;
+}
+
+.event-blocks .box {
     margin: 20px;
+    flex-direction: grid;
     border: 6px ridge rgba(1, 80, 17);
     border-radius: 7px;
     overflow: hidden;
     background-color: rgba(9, 26, 7);
 }
 
-.events .box img{
+.event-blocks .box img{
     max-width: 450px;
 }
-.events-text{
-    font-size: 1.5em;
+.event-blocks .box .events-text{
+    font-size: 15px;
     text-align: center;
     padding: 5px 0;
     font-style: italic;
@@ -162,7 +163,7 @@ header .navbar li a{
 a.btn {
     display: flex;
     margin-top: 40px;
-    font-size: 1.5em;
+    font-size: 15px;
     color:#d8d580;
     font-weight: bolder;
     font-style: italic;
@@ -171,4 +172,36 @@ a.btn {
     padding: 15px;
     text-decoration: none;
     transition: 0.5s;
+}
+
+.guides h2{
+    display: flex;
+    align-items: center;
+    font-family: "Metamorphous", sans-serif;
+    font-size: 3em;
+    padding-bottom: 20px;
+    font-style: bold;
+    justify-content: center;
+}
+.guides{
+    display: flex;
+}
+
+.guides .box{
+    margin: 20px;
+    flex-direction: grid;
+    border: 6px ridge rgba(1, 80, 17);
+    border-radius: 7px;
+    overflow: hidden;
+    background-color: rgba(9, 26, 7);
+}
+
+.contactus h2{
+    display: flex;
+    align-items: center;
+    font-family: "Metamorphous", sans-serif;
+    font-size: 3em;
+    padding-bottom: 20px;
+    font-style: bold;
+    justify-content: center;
 }
