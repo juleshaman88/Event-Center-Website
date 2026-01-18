@@ -77,7 +77,38 @@ header .navbar li a{
     min-height: 85vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-image: url(https://i.postimg.cc/VNS5tJWw/scribe-contact-us.png);
+    background-size: cover;
+}
+
+.event-banner{
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://i.postimg.cc/FzrWvmFP/pricing-events.png);
+    background-size: cover;
+}
+
+.about-banner{
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://i.postimg.cc/Rq5KQL36/about-us.png);
+    background-size: cover;
+}
+
+.guides-banner{
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://i.postimg.cc/zvmF0r6K/guides.png);
     background-size: cover;
 }
 
@@ -152,6 +183,7 @@ header .navbar li a{
 .event-blocks .box img{
     max-width: 450px;
 }
+
 .event-blocks .box .events-text{
     font-size: 15px;
     text-align: center;
@@ -160,8 +192,12 @@ header .navbar li a{
     color:#d8d580;
 }
 
+.events-btn{
+    align-items: center;
+}
+
 a.btn {
-    display: flex;
+    display: fixed;
     margin-top: 40px;
     font-size: 15px;
     color:#d8d580;
@@ -174,7 +210,7 @@ a.btn {
     transition: 0.5s;
 }
 
-.guides h2{
+.guides-title h2{
     display: flex;
     align-items: center;
     font-family: "Metamorphous", sans-serif;
@@ -183,17 +219,93 @@ a.btn {
     font-style: bold;
     justify-content: center;
 }
-.guides{
+
+.guides-box{
     display: flex;
 }
 
-.guides .box{
+.guides-box .box{
     margin: 20px;
     flex-direction: grid;
     border: 6px ridge rgba(1, 80, 17);
     border-radius: 7px;
     overflow: hidden;
     background-color: rgba(9, 26, 7);
+}
+
+.guides-box .box .guides-text{
+    font-size: 15px;
+    text-align: center;
+    padding: 5px 0;
+    font-style: italic;
+    color:#d8d580;
+}
+
+.pricing-content h2{
+    display: flex;
+    align-items: center;
+    font-family: "Metamorphous", sans-serif;
+    font-size: 3em;
+    padding-bottom: 20px;
+    font-style: bold;
+    justify-content: center;
+}
+
+.pricing th, td{
+    border: 5px ridge rgba(9, 26, 7);
+    font-size: 20px;
+    margin: 0;
+    padding: 25px;
+}
+
+.event-schedule h2{
+    display: flex;
+    align-items: center;
+    font-family: "Metamorphous", sans-serif;
+    font-size: 3em;
+    padding-bottom: 20px;
+    font-style: bold;
+    justify-content: center;
+}
+
+.events th, td{
+    border: 5px ridge rgba(9, 26, 7);
+    font-size: 20px;
+    margin: 0;
+    padding: 25px;
+}
+
+.pricing .ga, .vip{
+    font-weight: bold;
+}
+
+.events .jst, .bt, .te, .as, .tw {
+    font-weight: bold;
+}
+
+.table{
+    margin: 0;
+    padding: 25px;
+}
+
+.about-content h2{
+    display: flex;
+    align-items: center;
+    font-family: "Metamorphous", sans-serif;
+    font-size: 3em;
+    padding-bottom: 20px;
+    font-style: bold;
+    justify-content: center;
+}
+
+.guides-content h2{
+    display: flex;
+    align-items: center;
+    font-family: "Metamorphous", sans-serif;
+    font-size: 3em;
+    padding-bottom: 20px;
+    font-style: bold;
+    justify-content: center;
 }
 
 .contactus h2{
@@ -204,4 +316,82 @@ a.btn {
     padding-bottom: 20px;
     font-style: bold;
     justify-content: center;
+}
+
+.contactform {
+  padding: 75px 50px;
+  background: #fff;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin-top: 50px;
+}
+
+.contactform h3 {
+  color: rgba(9, 26, 7);
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.contactform .inputbox {
+  position: sticky;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contactform .inputbox {
+  position: sticky;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contactform .inputbox input,
+.contactform .inputbox textarea {
+  width: 100%;
+  border: 1px solid #555;
+  border-radius: 10px;
+  padding: 10px;
+  color: #111;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+  resize: none;
+}
+
+.contactform .inputbox input[type="submit"] {
+  font-size: 1em;
+  color: #d8d580;
+  background: rgba(9, 26, 7);
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  max-width: 100px;
+  transition: 0.5s;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.contactus {
+  background-size: cover;
+}
+
+.footer {
+  background: rgba(9, 26, 7);
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer p {
+  color: #d8d580;
+  font-weight: 300;
+}
+
+.footer .icons a {
+  color: #d8d580;
 }
