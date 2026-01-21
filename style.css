@@ -7,13 +7,25 @@
     font-family: Arial, sans-serif;
 }
 
+html{
+    height: 100%;
+}
+
+body{ 
+    margin: 0;
+    min-height: 100vh;
+    line-height: 1.6;
+    background-color: white;
+}
+
 p{
     font-weight: 300;
     font-size: 15px;
+    padding: 0 100px 0 100px;
 }
 
 section{
-    padding: 50px;
+    padding: 20px;
 }
 
 header{
@@ -68,7 +80,7 @@ header .navbar li a{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(https://i.postimg.cc/3wLqddfq/renfaire-hero-img.png);
+    background: url(https://i.postimg.cc/3wLqddfq/renfaire-hero-img.png) no-repeat, center/cover;
     background-size: cover;
 }
 
@@ -78,7 +90,7 @@ header .navbar li a{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(https://i.postimg.cc/VNS5tJWw/scribe-contact-us.png);
+    background: url(https://i.postimg.cc/VNS5tJWw/scribe-contact-us.png) no-repeat, center/cover;
     background-size: cover;
 }
 
@@ -88,7 +100,7 @@ header .navbar li a{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(https://i.postimg.cc/FzrWvmFP/pricing-events.png);
+    background: url(https://i.postimg.cc/FzrWvmFP/pricing-events.png) no-repeat, center/cover;
     background-size: cover;
 }
 
@@ -98,7 +110,7 @@ header .navbar li a{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(https://i.postimg.cc/Rq5KQL36/about-us.png);
+    background: url(https://i.postimg.cc/Rq5KQL36/about-us.png) no-repeat, center/cover;
     background-size: cover;
 }
 
@@ -108,7 +120,7 @@ header .navbar li a{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(https://i.postimg.cc/zvmF0r6K/guides.png);
+    background: url(https://i.postimg.cc/630mqWzS/about-us-hero.webp) no-repeat, center/cover;
     background-size: cover;
 }
 
@@ -251,13 +263,6 @@ a.btn {
     justify-content: center;
 }
 
-.pricing th, td{
-    border: 5px ridge rgba(9, 26, 7);
-    font-size: 20px;
-    margin: 0;
-    padding: 25px;
-}
-
 .event-schedule h2{
     display: flex;
     align-items: center;
@@ -268,24 +273,25 @@ a.btn {
     justify-content: center;
 }
 
-.events th, td{
-    border: 5px ridge rgba(9, 26, 7);
-    font-size: 20px;
-    margin: 0;
-    padding: 25px;
-}
-
-.pricing .ga, .vip{
-    font-weight: bold;
-}
-
-.events .jst, .bt, .te, .as, .tw {
-    font-weight: bold;
-}
-
 .table{
-    margin: 0;
-    padding: 25px;
+    padding: 0;
+    margin: 20px;
+    justify-self: center;
+    width: 70%;
+    background: rgb(238, 237, 237);
+    border: 5px ridge rgba(9, 26, 7);
+}
+
+.events th, td,
+.pricing th, td{
+    font-size: 20px;
+    padding: 10px;
+    border: .5px solid rgb(9, 26, 7);
+}
+
+.pricing .ga, .vip,
+.events .jst, .bt, .te, .as, .tw{
+    font-weight: bold;
 }
 
 .about-content h2{
@@ -319,11 +325,12 @@ a.btn {
 }
 
 .contactform {
-  padding: 75px 50px;
+  padding: 50px 50px;
   background: #fff;
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  margin-top: 50px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+  width: 700px;
+  margin: 20px;
+  justify-self: center;
 }
 
 .contactform h3 {
@@ -345,13 +352,25 @@ a.btn {
   margin-bottom: 20px;
 }
 
-.contactform .inputbox input,
-.contactform .inputbox textarea {
+.contactform .inputbox input {
   width: 100%;
   border: 1px solid #555;
   border-radius: 10px;
   padding: 10px;
-  color: #111;
+  color: rgba(9, 26, 7);
+  outline: rgba(9, 26, 7);
+  font-size: 16px;
+  font-weight: 300;
+  resize: none;
+}
+
+.contactform .inputbox textarea{
+  width: 100%;
+  height: 200px;
+  border: 1px solid #555;
+  border-radius: 10px;
+  padding: 10px;
+  color: rgba(9, 26, 7);
   outline: none;
   font-size: 16px;
   font-weight: 300;
@@ -366,7 +385,6 @@ a.btn {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 2px;
-  max-width: 100px;
   transition: 0.5s;
   font-weight: 500;
   border: none;
