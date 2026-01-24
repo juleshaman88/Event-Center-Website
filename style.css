@@ -18,8 +18,8 @@ body{
     background-color: white;
 }
 
-section{
-    padding: 20px;
+p{
+    padding: 0 50px 0 50px;
 }
 
 header{
@@ -147,12 +147,11 @@ header .navbar li a{
 
 .row .col50{
     width: 48%;
-    padding: 0 25px 0 25px;
+    padding: 20px;
 }
 
 .about h2{
     font-size: 3em;
-    padding-bottom: 20px;
     font-family: "Metamorphous", sans-serif;
     font-style: bold;
     justify-self: center;
@@ -171,7 +170,7 @@ header .navbar li a{
     align-items: center;
     font-family: "Metamorphous", sans-serif;
     font-size: 3em;
-    padding-bottom: 20px;
+    padding: 20px;
     font-style: bold;
     justify-content: center;
 }
@@ -237,7 +236,7 @@ header .navbar li a{
     align-items: center;
     font-family: "Metamorphous", sans-serif;
     font-size: 3em;
-    padding-bottom: 20px;
+    padding: 20px;
     font-style: bold;
     justify-content: center;
 }
@@ -255,16 +254,63 @@ header .navbar li a{
     background-color: rgba(9, 26, 7);
 }
 
+.icons{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.icons img{
+    max-height: 100px;
+}
+
+.icons .community,
+.icons .entertainment,
+.icons .passions,
+.icons .vendors{
+    justify-content: center;
+    margin: 20px 20px 0 20px;
+}
+
+.icons h3{
+    align-content: flex-end;
+    text-align: center;
+    padding: 10px;
+    font-family: "Metamorphous", sans-serif;
+    font-weight: 100;
+}
+
+.faire-values .corevalues{
+    text-align: center;
+    font-family: "Metamorphous", sans-serif;
+    font-size: 3em;
+    padding: 20px;
+    font-style: bold;
+}
+
+.faire-values p{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+
 .pricing-content h2,
 .event-schedule h2{
     display: flex;
     align-items: center;
     font-family: "Metamorphous", sans-serif;
     font-size: 3em;
-    padding-bottom: 20px;
+    padding: 0 20px 20px 20px;
     font-style: bold;
     justify-content: center;
 }
+
+.pricing-content,
+.event-schedule{
+    padding: 0 25px 0 25px;
+    font-size: 15px;
+    text-align: center;
+}    
 
 .table{
     padding: 0;
@@ -282,6 +328,10 @@ header .navbar li a{
     border: .5px solid rgb(9, 26, 7);
 }
 
+.pricing td.price{
+    text-align: center;
+}
+
 .pricing .ga, .vip,
 .events .jst, .bt, .te, .as, .tw{
     font-weight: bold;
@@ -292,7 +342,7 @@ header .navbar li a{
     align-items: center;
     font-family: "Metamorphous", sans-serif;
     font-size: 3em;
-    padding-bottom: 20px;
+    padding: 20px;
     font-style: bold;
     justify-content: center;
 }
@@ -302,7 +352,7 @@ header .navbar li a{
     align-items: center;
     font-family: "Metamorphous", sans-serif;
     font-size: 3em;
-    padding-bottom: 20px;
+    padding: 20px;
     font-style: bold;
     justify-content: center;
 }
@@ -332,6 +382,7 @@ a.btn {
 
 .contactus{
     background: rgb(233, 231, 231);
+    padding: 20px;
 }
 
 .contactform {
@@ -346,7 +397,7 @@ a.btn {
 .contactform h3 {
   color: rgba(9, 26, 7);
   font-size: 1.2em;
-  margin-bottom: 20px;
+  margin: 20px;
   font-weight: 500;
 }
 
@@ -412,6 +463,7 @@ a.btn {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
   flex-direction: column;
 }
 
