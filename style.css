@@ -250,9 +250,10 @@ header .navbar li a{
 /* About Page Styling */
 
 .icons{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    justify-content: left;
     margin: 20px;
+    padding: 0 20px 50px 20px;
 }
 
 .icons img{
@@ -263,7 +264,6 @@ header .navbar li a{
 .icons .entertainment,
 .icons .passions,
 .icons .vendors{
-    justify-content: center;
     margin: 20px 20px 0 20px;
 }
 
@@ -283,10 +283,42 @@ header .navbar li a{
     font-style: bold;
 }
 
+.about-story .row .col50 p,
 .faire-values p{
-    text-align: center;
-    padding-bottom: 20px;
+    padding: 0 20px 20px 20px;
     font-size: 15px;
+}
+
+.faire-values p{
+    padding: 0 50px 20px 50px;
+    text-align: center;
+}
+
+.about-story{
+    background: rgb(233, 231, 231);
+    border-bottom: 2px solid rgba(9, 26, 7);
+}
+
+.about-story .row{
+    display: flex;
+    justify-items: middle;
+    text-align: left;
+}
+
+.icons .col50{
+    display: grid;
+}
+.about-story .row .col50,
+.icons .col50{
+    width: 48%;
+    padding: 20px;
+}
+
+.about-story .row .col50 h2{
+    font-size: 3em;
+    font-family: "Metamorphous", sans-serif;
+    font-style: bold;
+    justify-self: center;
 }
 
 /*Guides Styling*/
@@ -294,12 +326,11 @@ header .navbar li a{
 .guides-content .title p{
     text-align: center;
     padding-bottom: 20px;
-    border-bottom: 2px solid rgba(9, 26, 7);
 }
 
 .guides-grid{
     justify-items: center;
-    padding: 20px;
+    padding: 50px;
 }
 
 .guide-row{
@@ -310,7 +341,7 @@ header .navbar li a{
     padding: 20px;
     border-radius: 7px;
     margin: 20px;
-    width: 1000px;
+    width: 800px;
 }
 
 .guide-row .col50{
@@ -318,11 +349,23 @@ header .navbar li a{
     align-content: center;
 }
 
+.guide-row .col50 h2{
+    font-family: "Metamorphous", sans-serif;
+    font-size: 2em;
+    padding: 20px;
+    font-style: bold;
+}
+
 .guide-row .col50 img{
     height: 600px;
     width: 300px;
     object-fit: cover;
     border-radius: 7px;
+}
+
+.guide-row .col50 p{
+    font-size: 15px;
+    padding-bottom: 20px;
 }
 
 /*Tickets Pricing Styling*/
@@ -407,6 +450,11 @@ a.btn {
     justify-content: center;
 }
 
+.contactus p{
+    display: flex;
+    font-size: 15px;
+}
+
 .contactus{
     background: rgb(233, 231, 231);
     padding: 20px;
@@ -485,10 +533,9 @@ a.btn {
   justify-content: center;
   align-items: center;
   align-content: center;
-  flex-direction: column;
 }
 
-.footer p {
+.footer p{
   color: #d8d580;
   font-weight: 300;
 }
