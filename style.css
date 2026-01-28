@@ -8,10 +8,6 @@
     font-family: Arial, sans-serif;
 }
 
-html{
-    height: 100%;
-}
-
 body{ 
     margin: 0;
     min-height: 100vh;
@@ -46,7 +42,6 @@ header{
     0 0 5px #a09d3f,
     0 0 10px #a09d3f;
     text-decoration: none;
-    font-size: 2.5rem;
 }
 
 header .navbar{
@@ -130,7 +125,6 @@ header .navbar li a{
     font-size: 6em;
     font-family: "Metamorphous", sans-serif;
     color: rgba(9, 26, 7);
-    font-weight: bolder;
     text-shadow:
     0 0 5px #a09d3f,
     0 0 10px #a09d3f,
@@ -158,8 +152,6 @@ header .navbar li a{
 .about h2{
     font-size: 3em;
     font-family: "Metamorphous", sans-serif;
-    font-style: bold;
-    justify-self: center;
 }
 
 .about p{
@@ -177,7 +169,6 @@ header .navbar li a{
     font-family: "Metamorphous", sans-serif;
     font-size: 3em;
     padding: 20px;
-    font-style: bold;
     justify-content: center;
 }
 
@@ -190,7 +181,7 @@ header .navbar li a{
 .event-blocks,
 .guides-box{
     display: flex;
-    justify-self: center;
+    justify-content: center;
 }
 
 .guides-title{
@@ -200,8 +191,8 @@ header .navbar li a{
 
 .event-blocks .box,
 .guides-box .box {
+    display: grid;
     margin: 20px;
-    flex-direction: grid;
     border: 6px ridge rgba(1, 80, 17);
     border-radius: 7px;
     overflow: hidden;
@@ -243,36 +234,33 @@ header .navbar li a{
     font-family: "Metamorphous", sans-serif;
     font-size: 3em;
     padding: 20px;
-    font-style: bold;
     justify-content: center;
 }
 
 /* About Page Styling */
 
-.icons{
-    display: grid;
-    justify-content: left;
-    margin: 20px;
-    padding: 0 20px 50px 20px;
+.about-story{
+    background: rgb(233, 231, 231);
+    border-bottom: 2px solid rgba(9, 26, 7);
 }
 
-.icons img{
-    max-height: 100px;
-}
-
-.icons .community,
-.icons .entertainment,
-.icons .passions,
-.icons .vendors{
-    margin: 20px 20px 0 20px;
-}
-
-.icons h3{
-    align-content: flex-end;
+.about-story .about-row,
+.icons .col50{
+    display: flex;
+    justify-content: center;
     text-align: center;
-    padding: 10px;
+}
+
+.about-story .about-row .col50{
+    width: 48%;
+    padding: 20px;
+}
+
+.about-story .about-row .col50 h2{
+    font-size: 3em;
     font-family: "Metamorphous", sans-serif;
-    font-weight: 100;
+    justify-self: center;
+    padding-bottom: 20px;
 }
 
 .faire-values .corevalues{
@@ -280,10 +268,9 @@ header .navbar li a{
     font-family: "Metamorphous", sans-serif;
     font-size: 3em;
     padding: 20px;
-    font-style: bold;
 }
 
-.about-story .row .col50 p,
+.about-story .about-row .col50 p,
 .faire-values p{
     padding: 0 20px 20px 20px;
     font-size: 15px;
@@ -294,38 +281,46 @@ header .navbar li a{
     text-align: center;
 }
 
-.about-story{
-    background: rgb(233, 231, 231);
-    border-bottom: 2px solid rgba(9, 26, 7);
-}
-
-.about-story .row{
-    display: flex;
-    justify-items: middle;
-    text-align: left;
-}
-
-.icons .col50{
+.icons{
     display: grid;
-}
-.about-story .row .col50,
-.icons .col50{
-    width: 48%;
-    padding: 20px;
+    margin: 20px;
+    padding: 0 20px 50px 20px;;
 }
 
-.about-story .row .col50 h2{
-    font-size: 3em;
-    font-family: "Metamorphous", sans-serif;
-    font-style: bold;
+.icons .col50{
+    width: 90%;
     justify-self: center;
+}
+
+.icons .col50 p{
+    font-size: 15px;
+    max-width: 600px;
+}
+
+.icons img{
+    max-height: 150px;
+}
+
+.icons h3{
+    align-content: flex-end;
+    text-align: center;
+    padding: 10px;
+    font-family: "Metamorphous", sans-serif;
+    font-size: 2em;
 }
 
 /*Guides Styling*/
 
+.guides-content .title h2{
+    text-align: center;
+    font-family: "Metamorphous", sans-serif;
+    font-size: 3em;
+    padding: 20px;
+}
+
 .guides-content .title p{
     text-align: center;
-    padding-bottom: 20px;
+    font-size: 15px;
 }
 
 .guides-grid{
@@ -373,24 +368,22 @@ header .navbar li a{
 .pricing-content h2,
 .event-schedule h2{
     display: flex;
-    align-items: center;
     font-family: "Metamorphous", sans-serif;
     font-size: 3em;
-    padding: 0 20px 20px 20px;
-    font-style: bold;
+    padding: 20px;
     justify-content: center;
 }
 
 .pricing-content,
 .event-schedule{
-    padding: 0 25px 0 25px;
+    padding: 0 20px 0 20px;
     font-size: 15px;
     text-align: center;
 }    
 
 .table{
     padding: 0;
-    margin: 20px;
+    margin: 50px;
     justify-self: center;
     width: 70%;
     background: rgb(238, 237, 237);
@@ -413,16 +406,28 @@ header .navbar li a{
     font-weight: bold;
 }
 
-/*About Page Styling*/
+/* Contact Page Styling*/
 
-.guides-content h2{
+.contactus .title{
+    text-align: center;
+    justify-items: center;
+}
+.contactus h2{
     display: flex;
-    align-items: center;
     font-family: "Metamorphous", sans-serif;
     font-size: 3em;
     padding: 20px;
-    font-style: bold;
-    justify-content: center;
+}
+
+.contactus p{
+    font-size: 15px;
+    padding: 20px;
+}
+
+.contactus{
+    background: rgb(233, 231, 231);
+    padding: 20px;
+    background-size: cover;
 }
 
 /*Button and Contact Form Styling*/ 
@@ -440,29 +445,8 @@ a.btn {
     transition: 0.5s;
 }
 
-.contactus h2{
-    display: flex;
-    align-items: center;
-    font-family: "Metamorphous", sans-serif;
-    font-size: 3em;
-    padding-bottom: 20px;
-    font-style: bold;
-    justify-content: center;
-}
-
-.contactus p{
-    display: flex;
-    font-size: 15px;
-}
-
-.contactus{
-    background: rgb(233, 231, 231);
-    padding: 20px;
-    background-size: cover;
-}
-
 .contactform {
-  padding: 50px 50px;
+  padding: 20px 50px 50px;
   background: #fff;
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
   width: 700px;
@@ -471,11 +455,10 @@ a.btn {
   border-radius: 7px;
 }
 
-.contactform h3 {
+.contactform p {
   color: rgba(9, 26, 7);
-  font-size: 1.2em;
-  margin: 20px;
-  font-weight: 500;
+  font-size: 15px;
+  padding-bottom: 20px;
 }
 
 .contactform .inputbox {
