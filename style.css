@@ -13,10 +13,7 @@ body{
     min-height: 100vh;
     line-height: 1.6;
     background-color: white;
-}
-
-p{
-    padding: 0 50px 0 50px;
+    padding: auto;
 }
 
 header{
@@ -88,7 +85,7 @@ header .navbar li a{
     border-bottom: 6px ridge rgba(1, 80, 17);
 }
 
-.event-banner{
+.tickets-banner{
     width: 100%;
     min-height: 85vh;
     display: flex;
@@ -284,7 +281,7 @@ header .navbar li a{
 .icons{
     display: grid;
     margin: 20px;
-    padding: 0 20px 50px 20px;;
+    padding: 0 20px 50px 20px;
 }
 
 .icons .col50{
@@ -295,6 +292,7 @@ header .navbar li a{
 .icons .col50 p{
     font-size: 15px;
     max-width: 600px;
+    padding: 40px;
 }
 
 .icons img{
@@ -525,4 +523,112 @@ a.btn {
 
 .footer .icons a {
   color: #d8d580;
+}
+
+/*Mobile Styling*/
+
+@media (max-width: 768px){
+.sticky{
+    max-height: 150px;
+}
+
+body,
+.contactform{
+    width: auto;
+}
+
+.contactform{
+  padding: 10px 20px 20px;
+  background: #fff;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+  margin: 20px;
+  border-radius: 7px;
+}
+
+.contactform p{
+    justify-content: center;
+}
+
+.homepage-banner,
+.about-banner,
+.guides-banner,
+.tickets-banner,
+.contact-banner{
+    justify-content: center;
+}
+
+.hero-content h1{
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.event-blocks,
+.guides-box{
+    display: grid;
+    max-width: auto;
+    align-items: inherit;
+    justify-items: center;
+}
+
+.icons .col50{
+    display: grid;
+    max-width: fit-content;
+    align-items: center;
+}
+.guides-grid{
+    display: grid;
+    max-width: fit-content;
+    justify-content: center;
+}
+
+.table{
+    display: flex;
+    margin: auto;
+    padding: auto;
+}
+
+.table th{
+    font-size: inherit;
+}
+
+.table tr, td{
+    font-size: inherit;
+}
+
+.navbar-toggle{
+    display: block;
+}
+
+.navbar-toggle{
+    color: #d8d580;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar {
+display: none;
+flex-direction: column;
+position: absolute;
+background-color: rgba(9, 26, 7); 
+top: 60px;
+left: 0;
+right: 0;
+z-index: 1;
+padding: 20px 0;
+}
+
+.navbar.active{
+    display: flex;
+}
+
+.navbar ul{
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar li{
+    margin: 10px 0;
+}
 }

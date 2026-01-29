@@ -6,12 +6,14 @@
         <title>Renaissance Faire Event Center</title>
         <meta name="description" content="Your one-stop-website and event center for the premiere PNW Renaissance Faire.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header class="sticky">
             <a href="index.html" class="logo">The PNW RenFaire</a>
-            <ul class="navbar">
+              <i class="fas fa-bars navbar-toggle" onclick="toggleNavbar()"></i>
+            <ul id="navbar" class="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="guides.html">Guides</a></li>
@@ -19,7 +21,7 @@
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </header>
-        <section class="banner">
+        <section class="ticekts-banner">
             <div class="tickets-banner">
             <div class="hero-content">
                 <h1>Event Pricing & Schedule</h1>
@@ -58,6 +60,7 @@
                 <tr><td class="tw">Themed Workshops</td><td>Starting at 1:00pm - see details at shop</td><td>Starting at 12:00pm - see details at shop</td><td>Starting at 12:00pm - see details at shop</td></tr>
             </table>
         </section>
+        
         <div class="footer">
             <p>Designed and Coded by Jules Haman</p>
             <div class="icons">
@@ -67,5 +70,12 @@
                 ><i class="linked-in-square"></i></a>
             </div>
         </div>
+    <script>
+        function toggleNavbar() {
+        const navbar = document.getElementById("navbar");
+        navbar.classList.toggle("active");
+        }
+    </script>
+    <script src="" async defer></script>
     </body>
 </html>
