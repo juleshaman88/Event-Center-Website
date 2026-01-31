@@ -10,17 +10,20 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header class="sticky">
+        <div class="navbar">
             <a href="index.html" class="logo">The PNW RenFaire</a>
-              <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
-            <ul class="navbar">
+            <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+            <div id="menu" class="menu">
+                <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="guides.html">Guides</a></li>
                 <li><a href="tickets.html">Tickets</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </header>
+                </ul>
+            </div>
+        </div>
+    <main>
         <section class="contact-banner">
             <div class="hero-content">
                 <h1>Contact Us</h1>
@@ -54,7 +57,8 @@
                 </div>
             </form>
         </section>
-        <div class="footer">
+    </main>
+    <div class="footer">
             <p>Designed and Coded by Jules Haman</p>
             <div class="icons">
                 <a href="LinkedIn" target="_blank"
@@ -62,13 +66,14 @@
                 <a href="GitHub" target="_blank"
                 ><i class="linked-in-square"></i></a>
             </div>
-        </div>
-    <script>
-        function togglenavbar() {
-        const navbar = document.getElementById("navbar");
-        navbar.classList.toggle("active");
-        }
-    </script>
+    </div>
+<script>
+    function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("active");
+    }
+</script>
+
     <script src="" async defer></script>
     </body>
 </html>   
