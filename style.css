@@ -16,6 +16,13 @@ body{
     padding: auto;
 }
 
+p{
+    font-size: 15px;
+    padding: 0 50px 0 50px;
+    line-height: 1.6;
+    padding-bottom: 15px;
+}
+
 header{
     position: absolute;
     top: 0;
@@ -444,7 +451,7 @@ a.btn {
 }
 
 .contactform {
-  padding: 20px 50px 50px;
+  padding: 50px;
   background: #fff;
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
   width: 700px;
