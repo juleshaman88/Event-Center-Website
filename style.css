@@ -13,7 +13,6 @@ body{
     min-height: 100vh;
     line-height: 1.6;
     background-color: white;
-    padding: auto;
 }
 
 p{
@@ -79,59 +78,38 @@ p{
 
 /*Hero Banner Styling*/
 
-.homepage-banner {
+.banner {
     width: 100%;
     height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 6px ridge rgba(1, 80, 17);
+}
+
+.homepage-banner{
     background: url(https://i.postimg.cc/3wLqddfq/renfaire-hero-img.png) no-repeat, center/cover;
     background-size: cover;
-    border-bottom: 6px ridge rgba(1, 80, 17);
 }
 
 .contact-banner{
-    width: 100%;
-    min-height: 85vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: url(https://i.postimg.cc/VNS5tJWw/scribe-contact-us.png) no-repeat, center/cover;
     background-size: cover;
-    border-bottom: 6px ridge rgba(1, 80, 17);
 }
 
 .tickets-banner{
-    width: 100%;
-    min-height: 85vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: url(https://i.postimg.cc/FzrWvmFP/pricing-events.png) no-repeat, center/cover;
     background-size: cover;
-    border-bottom: 6px ridge rgba(1, 80, 17);
 }
 
 .about-banner{
-    width: 100%;
-    min-height: 85vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: url(https://i.postimg.cc/Rq5KQL36/about-us.png) no-repeat, center/cover;
     background-size: cover;
-    border-bottom: 6px ridge rgba(1, 80, 17);
 }
 
 .guides-banner{
-    width: 100%;
-    height: 85vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: url(https://i.postimg.cc/630mqWzS/about-us-hero.webp) no-repeat, center/cover;
     background-size: cover;
-    border-bottom: 6px ridge rgba(1, 80, 17);
 }
 
 .hero-content h1{
@@ -276,7 +254,7 @@ p{
     padding-bottom: 20px;
 }
 
-.faire-values .corevalues{
+.faire-values h2{
     text-align: center;
     font-family: "Metamorphous", sans-serif;
     font-size: 3em;
@@ -362,7 +340,6 @@ p{
     font-family: "Metamorphous", sans-serif;
     font-size: 2em;
     padding: 20px;
-    font-style: bold;
 }
 
 .guide-row .col50 img{
@@ -431,17 +408,7 @@ p{
     font-family: "Metamorphous", sans-serif;
     font-size: 3em;
     padding: 20px;
-}
-
-.contactus p{
-    font-size: 15px;
-    padding: 20px;
-}
-
-.contactus{
-    background: rgb(233, 231, 231);
-    padding: 20px;
-    background-size: cover;
+    justify-content: center;
 }
 
 /*Button and Contact Form Styling*/ 
@@ -467,12 +434,6 @@ a.btn {
   margin: 20px;
   justify-self: center;
   border-radius: 7px;
-}
-
-.contactform p {
-  color: rgba(9, 26, 7);
-  font-size: 15px;
-  padding-bottom: 20px;
 }
 
 .contactform .inputbox {
@@ -525,19 +486,20 @@ a.btn {
 .footer {
   background: rgba(9, 26, 7);
   width: 100%;
-  height: 70px;
+  height: auto;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
+  flex-direction: column;
 }
 
 .footer p{
   color: #d8d580;
-  font-weight: 300;
+  font-weight: bold;
 }
 
-.footer .icons a {
+.footer .social-icons a {
   color: #d8d580;
 }
 
@@ -553,25 +515,11 @@ a.btn {
     .navbar{
         max-height: 150px;
         padding: 20px;
+        justify-content: space-around;
     }
 
     .logo{
         font-size: 1.5rem;
-    }
-
-    .homepage-banner,
-    .about-banner,
-    .guides-banner,
-    .tickets-banner,
-    .contact-banner{
-        max-height: auto;
-        border-bottom: 4px ridge rgba(9, 26, 7);
-    }
-
-    .hero-content h1{
-        font-size: 2rem;
-        text-align: center;
-        padding: 20px;
     }
 
     .menu-toggle{
@@ -603,17 +551,40 @@ a.btn {
         margin: 10px 0;
     }
 
-    .row,
-    .about-row{
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
+    .banner{
+        max-height: 400px;
+        align-self: last baseline;
     }
 
-    .row .col50,
-    .about-row .col50{
-        max-width: fit-content;
+    .hero-content h1{
+        font-size: 3rem;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .col50 h2,
+    .title h2,
+    .event h2,
+    .faire-values h2,
+    .guides-content .title h2 {
+        font-size: 2.5rem;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .row .col50{
+        width: auto;
+        padding-bottom: 20px;
+    }
+
+    .firstimg{
+        border-radius: 7px;
+        height: auto;
+    }
+
+    .row{
+        flex-direction: column;
+        align-items: center;
     }
 
     .event-blocks,
@@ -628,18 +599,15 @@ a.btn {
         align-items: center;
     }
 
-    .guides-grid{
+    .guide-row{
         display: grid;
-        max-width: fit-content;
-        justify-content: center;
-    }   
-
-    .table{
-        display: flex;
-        margin: auto;
-        padding: auto;
+        justify-items: center;
     }
 
+    .table{
+        margin: 0 20px 20px 20px;
+        width: 400px;
+    }
     .table th{
         font-size: inherit;
     }
@@ -649,9 +617,8 @@ a.btn {
     }
 
     .contactform{
-        width: auto;
+        width: 350px;
         padding: 20px;
-        margin: 20px;
         background: #fff;
         box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
         border-radius: 7px;
@@ -659,4 +626,10 @@ a.btn {
     .contactform p{
         justify-content: center;
     }
+
+    .footer{
+        height: auto;
+        padding: 20px;
+    }
+
 }
